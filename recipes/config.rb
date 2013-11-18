@@ -8,14 +8,11 @@ module Serf
       "role"           => "XXX",
       "bind_addr"      => "XXX",
       "rpc_addr"       => "XXX",
-      "encrypt_key"    => "I3vDELDtXpWBIabHF5IWiw==",
+      "encrypt_key"    => "XXX",
       "log_level"      => "info",
       "protocol"       => 1,
-      "start_join"     => "XXX",
-      "event_handlers" => [
-        "generic.sh",
-        "user:deploy=deploy.sh"
-      ]
+      "start_join"     => [],
+      "event_handlers" => []
     }
 
     def self.generate(node)
