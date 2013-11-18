@@ -18,3 +18,13 @@
     ]
 
     include_recipe "serf"
+
+
+## Alternatives(Chef):
+
+  - https://github.com/tfitch/serf-cookbook
+  - https://github.com/bbaugher/serf
+
+## Alternatives(Puppet):
+
+  - https://github.com/davidcollom/puppet-serf
