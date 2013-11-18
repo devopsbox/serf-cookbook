@@ -46,7 +46,7 @@ file "/etc/serf/serf.conf" do
 end
 
 
-%w(hostsfile hostsfile.rb).each do |event_handler|
+%w(hostsfile.rb).each do |event_handler|
   template "/etc/serf/handlers/#{event_handler}" do
     source "handlers/#{event_handler}"
     mode 00755
