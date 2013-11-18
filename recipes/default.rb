@@ -22,10 +22,10 @@ end
 
 bash "install serf #{version}" do
   code "cd /tmp && \
-wget #{url} && \
-unzip -o #{filename} && \
-mv serf /usr/local/bin/ && \
-rm #{filename}"
+    wget #{url} && \
+    unzip -o #{filename} && \
+    mv serf /usr/local/bin/ && \
+    rm #{filename}"
   not_if "test -e /usr/local/bin/serf && serf version|grep #{version}"
 end
 
