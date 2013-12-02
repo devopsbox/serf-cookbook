@@ -6,3 +6,4 @@ node.default[:serf][:rpc_addr]         = node[:ipaddress] + ":#{node.default[:se
 node.default[:serf][:start_join]       = []
 node.default[:serf][:event_handlers]   = []
 node.default[:serf][:url]              = "https://dl.bintray.com/mitchellh/serf/#{node[:serf][:version]}_linux_amd64.zip"
+node.default[:serf][:path]             = '/usr/local/bin'
