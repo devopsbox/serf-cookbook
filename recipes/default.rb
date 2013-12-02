@@ -1,12 +1,9 @@
-
 version  = node[:serf][:version]
 filename = "#{version}_linux_amd64.zip"
 url      = "https://dl.bintray.com/mitchellh/serf/#{filename}"
 
 
-package "unzip" do
-  action :install
-end
+package "unzip"
 
 bash "install serf #{version}" do
   code "cd /tmp && \
